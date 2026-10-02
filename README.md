@@ -36,15 +36,15 @@ Open `notebooks/00_start_here.ipynb` first.
 | 06 | `06_hitl_wait_for_input` | Agent pauses to ask the human | `interrupt` in a node *and* in a tool |
 | 07 | `07_hitl_time_travel` | Inspect, replay, fork past checkpoints | `get_state_history`, `update_state` |
 | 08 | `08_hitl_review_tool_calls` | Approve / edit / reject tool calls | `HumanInTheLoopMiddleware` |
-| 09 | `09_tool_use_react` ⭐ | ReAct tool loop (by hand + one-liner) | `bind_tools`, `ToolNode`, `create_agent` |
-| 10 | `10_prompt_chaining` ⭐ | Pipeline of prompts with a gate | conditional edges |
-| 11 | `11_routing` ⭐ | Cheap classifier → specialist | small model as router |
-| 12 | `12_parallelization` ⭐ | Sectioning + voting | parallel edges, threads |
-| 13 | `13_memory` ⭐ | Short-term (thread) + long-term (store) memory | `InMemorySaver`, `InMemoryStore` |
-| 14 | `14_guardrails` ⭐ | Input / output checks | regex + tiny LLM judge |
-| 15 | `14_subgraphs` ⭐ | Graph and subgraphs |
+| 09 | `09_tool_use_react`  | ReAct tool loop (by hand + one-liner) | `bind_tools`, `ToolNode`, `create_agent` |
+| 10 | `10_prompt_chaining`  | Pipeline of prompts with a gate | conditional edges |
+| 11 | `11_routing`  | Cheap classifier → specialist | small model as router |
+| 12 | `12_parallelization`  | Sectioning + voting | parallel edges, threads |
+| 13 | `13_memory`  | Short-term (thread) + long-term (store) memory | `InMemorySaver`, `InMemoryStore` |
+| 14 | `14_guardrails`  | Input / output checks | regex + tiny LLM judge |
+| 15 | `14_subgraphs`  | Graph and subgraphs |
 
-⭐ = extra patterns you didn't list but are worth knowing.
+ 
 
 ### Other patterns worth knowing (not coded here)
 * **Agentic RAG** – agent decides *when/what* to retrieve, grades the documents, rewrites the query if they're poor.
